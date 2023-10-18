@@ -1,0 +1,105 @@
+body {
+    display: grid;
+    /**background-color: rgb(16, 18, 109);*/
+    justify-content: center;
+    /**color: white; */
+    font-size: 20px;
+}
+
+
+.titleDiv {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleDiv a {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 40px;
+}
+  
+h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+}
+ 
+#question {
+    padding:20px;
+    border: 2px ridge black;
+}
+  
+.topContainer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+    max-width: 600px;
+}
+
+.bottomContainer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.gameType {
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    width: 1fr;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+ }
+
+.choiceContainer {
+    display: grid;
+
+}
+
+  
+ 
+.playButtonContainer {
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.playButton {
+    padding: 5px;
+    margin: 15px;
+    width: 9ch;
+    height: 9ch;
+    border-radius: 50%;
+    border-width: 2px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+
+.playButton:hover {
+    opacity: .8;
+}
+
+.answerButton {
+    width: 15ch;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+
+}
