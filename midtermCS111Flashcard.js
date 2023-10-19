@@ -1,6 +1,3 @@
-let points = 0;
-let newPoint = false;
-
 const playButton = document.querySelector('.playButton');
 const bottomContainer = document.querySelector('.bottomContainer');
 const topContainer = document.querySelector('.topContainer')
