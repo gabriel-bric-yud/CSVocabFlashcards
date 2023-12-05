@@ -1,0 +1,210 @@
+body {
+    display: grid;
+    /**background-color: rgb(16, 18, 109);*/
+    justify-content: center;
+    /**color: white; */
+    font-size: 20px;
+}
+
+body {
+  display: grid;
+  /**background-color: rgb(16, 18, 109);*/
+  justify-content: center;
+  /**color: white; */
+}
+
+
+.titleDiv {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleDiv a {
+  font-family: 'Bungee Spice', cursive;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+#question {
+  padding:10px;
+  border: 2px ridge black;
+  font-size: 20px;
+}
+
+.topContainer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  width: 1fr;
+  justify-content: center;
+  text-align: center;
+  margin: 3px auto;
+}
+
+.choiceContainer {
+  display: grid;
+  height: fit-content;
+  text-align: center;
+}
+
+.answerButton {
+  width: fit-content;
+  justify-self: center;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 20px;
+}
+
+#answerText {
+  font-size: 20px;
+  width: 100%;
+}
+
+
+.answerButton:hover {
+  opacity: .8;
+}
+
+
+.playButtonContainer {
+  margin: 0px auto;
+  justify-content: center;
+  display: grid;
+}
+
+.playButton {
+  padding: 5px;
+  margin: 15px;
+  width: 9ch;
+  height: 9ch;
+  border-radius: 50%;
+  border-width: 2px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  background-color: lightgreen;
+}
+
+
+.playButton:hover {
+  opacity: .8;
+}
+
+.resultContainer {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+@keyframes rotateY {
+  100% {rotate: y 180deg }
+}
+
+.animate {
+  animation: rotateY .1s 1 linear;
+  width: 5ch;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 5px;
+}
+
+
+.message {
+  position: absolute;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: max-content;
+  height: fit-content;
+  font-size: 20px;
+  z-index: 9999;
+
+}
+
+.message {
+  border: 10px ridge #F55C47;
+  padding-bottom: none;
+}
+
+.messageText {
+  padding: 10px 10px;
+}
+
+.gameType {
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+#guessWord, #guessDefinition {
+  height:20px; 
+  width:20px;
+}
+
+legend {
+  justify-self: center;
+  text-align: center;
+}
+
+
+
+
+@media (min-width: 900px) {
+  .topContainer {
+    max-width: 850px;
+  }
+  #question {
+    font-size: 40px;
+  }
+
+  .playButton {
+    width: 9ch;
+    height: 9ch;
+    font-size: 40px;
+  }
+
+  .answerButton {
+    font-size: 30px;
+  }
+
+  #answerText {
+    font-size: 40px;
+    
+  }
+  .titleDiv a {
+    font-size: 40px;
+  }
+
+  .gameType {
+    font-size: 40px;
+  }
+
+  #guessWord, #guessDefinition {
+    height:30px; 
+    width:30px;
+  }
+
+}
