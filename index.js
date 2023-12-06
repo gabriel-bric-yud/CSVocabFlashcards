@@ -972,7 +972,7 @@ let vocabArrayFinal = [
    {
     vocab:  'Hexagon',
     definition: 'Flowchart symbol for some repetition structures such as count-controlled loops and for loops.'
-  },
+  }
 ]
 
 
