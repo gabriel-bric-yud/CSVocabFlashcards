@@ -569,323 +569,388 @@ let vocabArrayMidterm = [
 ]
 
 let vocabArrayFinal = [
-    {
-      vocab: 'Module',
-      definition: 'A group of statements that exists within a program for the purpose of perfoming a specific task. Also known as "procedures", "subroutines", "subprograms", "methods" and "functions".'
-    },
-    {
-      vocab: 'Divide and Conquer',
-      definition: 'Large task is divided into several smaller tasks that are easily performed.'
-    },
-    {
-      vocab: 'Module Definition, or Function Definition',
-      definition: 'The code for a module or function, also known as the body.'
-    },
-    {
-      vocab: 'Module Header, or Function Header',
-      definition: 'The starting point of a module or function where it is named and parameters are placed.'
-    },
-    {
-      vocab: 'Call',
-      definition: 'To execute a module.'
-    },
-    {
-      vocab: 'Return Point',
-      definition: 'The memory address of the location that the program should return to after the module is executed.'
-    },
-    {
-      vocab: 'Top-Down Design',
-      definition: 'The process to break down an algorithm into modules. Begins by looking at the topmost level of tasks and breaking them down into lower level subtasks. This is repeated for each subtask until no more subtasks can be identified. Also called "step-wise refinement".'
-    },
-    {
-      vocab: 'Code Reuse',
-      definition: 'A benefit of using modules that helps to reduce the duplication of code within a program'
-    },
-    {
-      vocab: 'Hierarchy Chart, or Structure Chart',
-      definition: 'A visual representation of the relationships between modules in a program.'
-    },
-    {
-      vocab: 'Local Variable',
-      definition: 'A variable declared inside a module.'
-    },
-    {
-      vocab: 'Local',
-      definition: 'Data that can only be accessed within the scope it was created.'
-    },
-    {
-      vocab: 'Scope',
-      definition: 'Used to describe the part of a program in which a variable may be accessed. Such as local or global.'
-    },
-    {
-      vocab: 'Arguments',
-      definition: 'Pieces of data that are sent into a module'
-    },
-    {
-      vocab: 'Parameter, or Parameter Variable',
-      definition: 'A special placeholder variable that recieves an argument when a module is called.'
-    },
-    {
-      vocab: 'Parameter List',
-      definition: 'The group of parameters declared inside a module header.'
-    },
-    {
-      vocab: 'Passing Arguments by Value',
-      definition: 'When only a copy of an arguments value are passed into a parameter variable of a method, but the argument will not actually change outside the module.'
-    },
-    {
-      vocab: 'Passing Arguments by Referance',
-      definition: 'When a referance variable is passed to a parameter variable of a method, which will also change the variable being referanced.'
-    },
-    {
-      vocab: 'Referance Variable',
-      definition: 'A special variable that acts as a referance to another variable and will modify it when changed.'
-    },
-    {
-      vocab: 'Refactoring',
-      definition: 'Improving the design of an existing program without changing the behavior. Also know as "cleaning up" the design.'
-    },
-    {
-      vocab: 'Global Variable',
-      definition: 'A variable that is visible to every module in the program. Its scope is the entire program.'
-    },
-    {
-      vocab: 'Global Constant',
-      definition: 'A named constant that is available to every module in the program.'
-    },
-    {
-      vocab: 'Function',
-      definition: 'A module that returns(sends) a value back to the part of the program that called it.'
-    },
-    {
-      vocab: 'Library Functions',
-      definition: 'Built in functions in a languege that perform many common useful tasks like manipulating numbers, strings or arrays.'
-    },
-    {
-      vocab: 'Black Box',
-      definition: 'A mechanism that accepts input, performs some operation that cannot be seen, and produces output.'
-    },
-    {
-      vocab: 'IPO chart',
-      definition: 'Describes the input, processing, and output of a program.'
-    },
-    {
-      vocab: 'Boolean Function',
-      definition: 'A function that returns either true or false.'
-    },
-    {
-      vocab: 'Return Statement',
-      definition: 'The part of a function that sends data back to a program to be used.'
-    },
-    {
-      vocab: 'Type Mismatch Error',
-      definition: 'When a value is assigned to a variable of a different type.'
-    },
-    {
-      vocab: 'Case-Sensitive',
-      definition: 'When uppercase characters are distinguished from lower case characters.'
-    },
-    {
-      vocab: 'Substring',
-      definition: 'A string within a string. A portion of a string.'
-    },
-    {
-      vocab: 'Garbage In, Garbage Out (GIGO)',
-      definition: 'Describes the idea that if a program reads bad data as input, it will produce bad data as output.'
-    },
-    {
-      vocab: 'Input Validation',
-      definition: 'Process of checking whether input data is invalid, discarding it and prompting the user for correct data.'
-    },
-    {
-      vocab: 'Priming Read',
-      definition: 'The first input operation done before the loop and will be tested by the validation loop.'
-    },
-    {
-      vocab: 'Pretest Loop',
-      definition: 'A loop that test an expression before is starts looping.'
-    },
-    {
-      vocab: 'Error Trap, or Error Handler',
-      definition: 'Another name for an input validation loop.'
-    },
-    {
-      vocab: 'Posttest loop',
-      definition: 'A loop that test an expression starting after the first iteration.'
-    },
-    {
-      vocab: 'Defensive Programming',
-      definition: 'The practice of anticipating errors that can happen while running a program, and designing a program to avoid those errors.'
-    },
-    {
-      vocab: 'Empty Input',
-      definition: 'When an input operation attempts to read data but there is no data to read.'
-    },
-    {
-      vocab: 'Arrays',
-      definition: 'A named storage location in memory specifically designed for storing and processing lists of data.'
-    },
-    {
-      vocab: 'Size Declarator',
-      definition: 'Specifies the number of values an array can hold.'
-    },
-    {
-      vocab: 'Elements',
-      definition: 'The individual items in an array.'
-    },
-    {
-      vocab: 'Subscript, or Indexes',
-      definition: 'A number which corresponds to the numerical place an element is in an array.'
-    },
-    {
-      vocab: 'Initialization List',
-      definition: 'A series of values seperated by commas to be used as data in an array.'
-    },
-    {
-      vocab: 'Array Bounds Checking',
-      definition: 'The process a program uses to verify if an element is located at an index within the length of an array.'
-    },
-    {
-      vocab: 'Off-By-One Error',
-      definition: 'When a loop iterates one too many or too few times.'
-    },
-    {
-      vocab: 'Search Algorithms',
-      definition: 'An algorithm developed to locate a specific item in a larger collection of data.'
-    },
-    {
-      vocab: 'Sequential Search Algorithm',
-      definition: 'Using a loop is step through each item of an array, starting at the first element, and comparing each following element with the value being searched for.'
-    },
-    {
-      vocab: 'Accumulator Variable, or Running Total',
-      definition: 'A variable used in a loop to add up the total specified data during each iteration of the loop.'
-    },
-    {
-      vocab: 'Parallel Arrays',
-      definition: 'Two or more arrayys that hold related data, and the related element in each array are accessed by the same index.'
-    },
-    {
-      vocab: 'One Dimensional Array',
-      definition: 'An array that only holds one set of data.'
-    },
-    {
-      vocab: 'Two Dimensional Array, or 2D Array',
-      definition: 'An array that can hold multiple sets of data. An array of arrays or objects.'
-    },
-    {
-      vocab: 'Output File',
-      definition: 'Describes a file that data is written to. The program stores output in the file.'
-    },
-    {
-      vocab: 'Input File',
-      definition: 'Describes a file that data is read from. The program gets input from the file.'
-    },
-    {
-      vocab: 'Write and Read Data Process',
-      definition: 'Three steps taken by input/output files. Open the file, process the file and close the file.'
-    },
-    {
-      vocab: 'Text File',
-      definition: 'Contains data that has been encoded as text, using a scheme such as ASCII or Unicode.'
-    },
-    {
-      vocab: 'Binary File',
-      definition: 'Contains data that has not been converted to text.'
-    },
-    {
-      vocab: 'Sequential Access File',
-      definition: 'Getting data from the beginning of the file to the end of the file.'
-    },
-    {
-      vocab: 'Direct Access File, or Random Access File',
-      definition: 'Getting data by jumping directly to any piece of data in the file without reading the data that comes before it.'
-    },
-    {
-      vocab: 'Filename Extensions',
-      definition: 'Short sequences of character that appear at the end of a filename, preceded by a period. Describes what type of file it is.'
-    },
-    {
-      vocab: 'Buffer',
-      definition: 'A small “holding section” in memory.'
-    },
-    {
-      vocab: 'Delimiter',
-      definition: 'A predefined character or set of characters that marks the end of each piece of data. Its purpose is to separate the different items that are stored in a file.'
-    },
-    {
-      vocab: 'End-Of-File Marker (EOF)',
-      definition: 'A character used to indicate where the files contents end.'
-    },
-    {
-      vocab: 'Read Position',
-      definition: 'A special value that marks the location of the next item that will be read in a file.'
-    },
-    {
-      vocab: 'Record',
-      definition: 'A complete set of data about an item when data is written from a file.'
-    },
-    {
-      vocab: 'Field',
-      definition: 'A single piece of data within a record'
-    },
-    {
-      vocab: 'File Specification Document',
-      definition: 'Describes the fields that are stored in a particular file, including their data type.'
-    },
-    {
-      vocab: 'Control Break Processing',
-      definition: 'Interrupts a programs regular processing to perform a different action when a control variables value changes or the the variable acquires a specific value. After complete, the programs regular processing resumes.'
-    },
-    {
-      vocab: 'Control Variable',
-      definition: 'A special variable used in control break logic to start and end the processing.'
-    },
-   {
-      vocab:  'Sequence Structure',
-      definition: 'A set of statements that execute in the order that they appear.'
-    },
-    {
-      vocab:  'Control Structure or Structure',
-      definition: 'A logical design that controls the order in which a set of statements executes.'
-    },
-    {
-      vocab:  'Program Development Cycle',
-      definition: '5 step process of creating a program and is repeated until no errors can be found. The steps are Design the program, Write the code, Correct syntax errors, Test the executable code, Debug the code.'
-    },
-    {
-      vocab:  'Designing a Program',
-      definition: 'The first step of the Program Development Cycle and consists of two steps: Understand the task that the program is to perform and determine the steps that must be taken to perform the task.'
-    },
-    {
-      vocab:  'Decision Structure',
-      definition: 'Allows a program to perform actions only under certain conditions. Also called a selection structure.'
-    },
-    {
-      vocab:  'Single Alternative Decision Structure',
-      definition: 'A structure that provides only one alternative path of execution.'
-    },
-    {
-      vocab:  'Dual Alternative Decision Structure',
-      definition: ' is a structure with two possible paths of execution: one path is taken if a condition is true, and the other path is taken if the condition is false.'
-    },
-    {
-      vocab:  'Case Structure or Multiple Alternative Decision Structure',
-      definition: 'Allows you to test the value of a variable or an expression (test Expression) and then use that value to determine which statement or set of statements to execute.'
-    },
-    {
-      vocab:  'Repetition Structure',
-      definition: 'Causes a statement or set of statements to execute repeatedly. Commonly known as a loop.'
-    },
-    {
-      vocab:  'Condition-Controlled Loop',
-      definition: 'Uses a true/false condition to control the number of times that something repeats. Examples are while, do-while, do-until'
-    },
-    {
-      vocab:  'Count-Controlled loop ',
-      definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
-    }  
+  {
+    vocab: 'Module',
+    definition: 'A group of statements that exists within a program for the purpose of perfoming a specific task. Also known as "procedures", "subroutines", "subprograms", "methods" and "functions".'
+  },
+  {
+    vocab: 'Divide and Conquer',
+    definition: 'Large task is divided into several smaller tasks that are easily performed.'
+  },
+  {
+    vocab: 'Module Definition, or Function Definition',
+    definition: 'The code for a module or function, also known as the body.'
+  },
+  {
+    vocab: 'Module Header, or Function Header',
+    definition: 'The starting point of a module or function where it is named and parameters are placed.'
+  },
+  {
+    vocab: 'Call',
+    definition: 'To execute a module.'
+  },
+  {
+    vocab: 'Return Point',
+    definition: 'The memory address of the location that the program should return to after the module is executed.'
+  },
+  {
+    vocab: 'Top-Down Design',
+    definition: 'The process to break down an algorithm into modules. Begins by looking at the topmost level of tasks and breaking them down into lower level subtasks. This is repeated for each subtask until no more subtasks can be identified. Also called "step-wise refinement".'
+  },
+  {
+    vocab: 'Code Reuse',
+    definition: 'A benefit of using modules that helps to reduce the duplication of code within a program'
+  },
+  {
+    vocab: 'Hierarchy Chart, or Structure Chart',
+    definition: 'A visual representation of the relationships between modules in a program.'
+  },
+  {
+    vocab: 'Local Variable',
+    definition: 'A variable declared inside a module.'
+  },
+  {
+    vocab: 'Local',
+    definition: 'Data that can only be accessed within the scope it was created.'
+  },
+  {
+    vocab: 'Scope',
+    definition: 'Used to describe the part of a program in which a variable may be accessed. Such as local or global.'
+  },
+  {
+    vocab: 'Arguments',
+    definition: 'Pieces of data that are sent into a module'
+  },
+  {
+    vocab: 'Parameter, or Parameter Variable',
+    definition: 'A special placeholder variable that recieves an argument when a module is called.'
+  },
+  {
+    vocab: 'Parameter List',
+    definition: 'The group of parameters declared inside a module header.'
+  },
+  {
+    vocab: 'Passing Arguments by Value',
+    definition: 'When only a copy of an arguments value are passed into a parameter variable of a method, but the argument will not actually change outside the module.'
+  },
+  {
+    vocab: 'Passing Arguments by Referance',
+    definition: 'When a referance variable is passed to a parameter variable of a method, which will also change the variable being referanced.'
+  },
+  {
+    vocab: 'Referance Variable',
+    definition: 'A special variable that acts as a referance to another variable and will modify it when changed.'
+  },
+  {
+    vocab: 'Refactoring',
+    definition: 'Improving the design of an existing program without changing the behavior. Also know as "cleaning up" the design.'
+  },
+  {
+    vocab: 'Global Variable',
+    definition: 'A variable that is visible to every module in the program. Its scope is the entire program.'
+  },
+  {
+    vocab: 'Global Constant',
+    definition: 'A named constant that is available to every module in the program.'
+  },
+  {
+    vocab: 'Function',
+    definition: 'A module that returns(sends) a value back to the part of the program that called it.'
+  },
+  {
+    vocab: 'Library Functions',
+    definition: 'Built in functions in a languege that perform many common useful tasks like manipulating numbers, strings or arrays.'
+  },
+  {
+    vocab: 'Black Box',
+    definition: 'A mechanism that accepts input, performs some operation that cannot be seen, and produces output.'
+  },
+  {
+    vocab: 'IPO chart',
+    definition: 'Describes the input, processing, and output of a program.'
+  },
+  {
+    vocab: 'Boolean Function',
+    definition: 'A function that returns either true or false.'
+  },
+  {
+    vocab: 'Return Statement',
+    definition: 'The part of a function that sends data back to a program to be used.'
+  },
+  {
+    vocab: 'Type Mismatch Error',
+    definition: 'When a value is assigned to a variable of a different type.'
+  },
+  {
+    vocab: 'Case-Sensitive',
+    definition: 'When uppercase characters are distinguished from lower case characters.'
+  },
+  {
+    vocab: 'Substring',
+    definition: 'A string within a string. A portion of a string.'
+  },
+  {
+    vocab: 'Garbage In, Garbage Out (GIGO)',
+    definition: 'Describes the idea that if a program reads bad data as input, it will produce bad data as output.'
+  },
+  {
+    vocab: 'Input Validation',
+    definition: 'Process of checking whether input data is invalid, discarding it and prompting the user for correct data.'
+  },
+  {
+    vocab: 'Priming Read',
+    definition: 'The first input operation done before the loop and will be tested by the validation loop.'
+  },
+  {
+    vocab: 'Pretest Loop',
+    definition: 'A loop that test an expression before is starts looping.'
+  },
+  {
+    vocab: 'Error Trap, or Error Handler',
+    definition: 'Another name for an input validation loop.'
+  },
+  {
+    vocab: 'Posttest loop',
+    definition: 'A loop that test an expression starting after the first iteration.'
+  },
+  {
+    vocab: 'Defensive Programming',
+    definition: 'The practice of anticipating errors that can happen while running a program, and designing a program to avoid those errors.'
+  },
+  {
+    vocab: 'Empty Input',
+    definition: 'When an input operation attempts to read data but there is no data to read.'
+  },
+  {
+    vocab: 'Arrays',
+    definition: 'A named storage location in memory specifically designed for storing and processing lists of data.'
+  },
+  {
+    vocab: 'Size Declarator',
+    definition: 'Specifies the number of values an array can hold.'
+  },
+  {
+    vocab: 'Elements',
+    definition: 'The individual items in an array.'
+  },
+  {
+    vocab: 'Subscript, or Indexes',
+    definition: 'A number which corresponds to the numerical place an element is in an array.'
+  },
+  {
+    vocab: 'Initialization List',
+    definition: 'A series of values seperated by commas to be used as data in an array.'
+  },
+  {
+    vocab: 'Array Bounds Checking',
+    definition: 'The process a program uses to verify if an element is located at an index within the length of an array.'
+  },
+  {
+    vocab: 'Off-By-One Error',
+    definition: 'When a loop iterates one too many or too few times.'
+  },
+  {
+    vocab: 'Search Algorithms',
+    definition: 'An algorithm developed to locate a specific item in a larger collection of data.'
+  },
+  {
+    vocab: 'Sequential Search Algorithm',
+    definition: 'Using a loop is step through each item of an array, starting at the first element, and comparing each following element with the value being searched for.'
+  },
+  {
+    vocab: 'Accumulator Variable, or Running Total',
+    definition: 'A variable used in a loop to add up the total specified data during each iteration of the loop.'
+  },
+  {
+    vocab: 'Parallel Arrays',
+    definition: 'Two or more arrayys that hold related data, and the related element in each array are accessed by the same index.'
+  },
+  {
+    vocab: 'One Dimensional Array',
+    definition: 'An array that only holds one set of data.'
+  },
+  {
+    vocab: 'Two Dimensional Array, or 2D Array',
+    definition: 'An array that can hold multiple sets of data. An array of arrays or objects.'
+  },
+  {
+    vocab: 'Output File',
+    definition: 'Describes a file that data is written to. The program stores output in the file.'
+  },
+  {
+    vocab: 'Input File',
+    definition: 'Describes a file that data is read from. The program gets input from the file.'
+  },
+  {
+    vocab: 'Write and Read Data Process',
+    definition: 'Three steps taken by input/output files. Open the file, process the file and close the file.'
+  },
+  {
+    vocab: 'Text File',
+    definition: 'Contains data that has been encoded as text, using a scheme such as ASCII or Unicode.'
+  },
+  {
+    vocab: 'Binary File',
+    definition: 'Contains data that has not been converted to text.'
+  },
+  {
+    vocab: 'Sequential Access File',
+    definition: 'Getting data from the beginning of the file to the end of the file.'
+  },
+  {
+    vocab: 'Direct Access File, or Random Access File',
+    definition: 'Getting data by jumping directly to any piece of data in the file without reading the data that comes before it.'
+  },
+  {
+    vocab: 'Filename Extensions',
+    definition: 'Short sequences of character that appear at the end of a filename, preceded by a period. Describes what type of file it is.'
+  },
+  {
+    vocab: 'Buffer',
+    definition: 'A small “holding section” in memory.'
+  },
+  {
+    vocab: 'Delimiter',
+    definition: 'A predefined character or set of characters that marks the end of each piece of data. Its purpose is to separate the different items that are stored in a file.'
+  },
+  {
+    vocab: 'End-Of-File Marker (EOF)',
+    definition: 'A character used to indicate where the files contents end.'
+  },
+  {
+    vocab: 'Read Position',
+    definition: 'A special value that marks the location of the next item that will be read in a file.'
+  },
+  {
+    vocab: 'Record',
+    definition: 'A complete set of data about an item when data is written from a file.'
+  },
+  {
+    vocab: 'Field',
+    definition: 'A single piece of data within a record'
+  },
+  {
+    vocab: 'File Specification Document',
+    definition: 'Describes the fields that are stored in a particular file, including their data type.'
+  },
+  {
+    vocab: 'Control Break Processing',
+    definition: 'Interrupts a programs regular processing to perform a different action when a control variables value changes or the the variable acquires a specific value. After complete, the programs regular processing resumes.'
+  },
+  {
+    vocab: 'Control Variable',
+    definition: 'A special variable used in control break logic to start and end the processing.'
+  },
+ {
+    vocab:  'Sequence Structure',
+    definition: 'A set of statements that execute in the order that they appear.'
+  },
+  {
+    vocab:  'Control Structure or Structure',
+    definition: 'A logical design that controls the order in which a set of statements executes.'
+  },
+  {
+    vocab:  'Program Development Cycle',
+    definition: '5 step process of creating a program and is repeated until no errors can be found. The steps are Design the program, Write the code, Correct syntax errors, Test the executable code, Debug the code.'
+  },
+  {
+    vocab:  'Designing a Program',
+    definition: 'The first step of the Program Development Cycle and consists of two steps: Understand the task that the program is to perform and determine the steps that must be taken to perform the task.'
+  },
+  {
+    vocab:  'Decision Structure',
+    definition: 'Allows a program to perform actions only under certain conditions. Also called a selection structure.'
+  },
+  {
+    vocab:  'Single Alternative Decision Structure',
+    definition: 'A structure that provides only one alternative path of execution.'
+  },
+  {
+    vocab:  'Dual Alternative Decision Structure',
+    definition: ' is a structure with two possible paths of execution: one path is taken if a condition is true, and the other path is taken if the condition is false.'
+  },
+  {
+    vocab:  'Case Structure or Multiple Alternative Decision Structure',
+    definition: 'Allows you to test the value of a variable or an expression (test Expression) and then use that value to determine which statement or set of statements to execute.'
+  },
+  {
+    vocab:  'Repetition Structure',
+    definition: 'Causes a statement or set of statements to execute repeatedly. Commonly known as a loop.'
+  },
+  {
+    vocab:  'Condition-Controlled Loop',
+    definition: 'Uses a true/false condition to control the number of times that something repeats. Examples are while, do-while, do-until'
+  },
+  {
+    vocab:  'Count-Controlled loop ',
+    definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
+  },
+    {
+        vocab: 'Program',
+        definition: 'A set of instructions that a computer follows to perform a task.'
+    },
+    {
+        vocab:  'American Standard Code for Information Interchange (ASCII)',
+        definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
+    },
+    {
+        vocab:  'Byte',
+        definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
+    },
+    {
+        vocab:  'Bit',
+        definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
+    },
+      {
+    vocab:  'Machine Language',
+    definition: 'A programming language consisting of binary or hexadecimal instructions which a computer can respond to directly.'
+  },
+      {
+    vocab:  'Assembly Language',
+    definition: 'An early alternative to machine language. Instead of using binary numbers for instructions, it uses short words that are known as mnemonics.'
+  },
+      {
+    vocab:  'Compiler',
+    definition: 'A program that translates a high-level language program into a separate machine language program.'
+  },
+  {
+    vocab:  'Interpreter',
+    definition: 'A program that both translates and executes the instructions in a high-level language program. This reads each individual instruction in the program, converts it to a machine language instruction and then immediately executes it.'
+  },
+      {
+    vocab:  'Assembler',
+    definition: 'A special program used to translate an assembly language program to a machine language program.'
+  },
+      {
+    vocab:  'Low-level Language',
+    definition: "A language that provides little or no abstraction from a computer's instruction set."
+  },
+  {
+    vocab:  'High-level Language ',
+    definition: 'A programming language with strong abstraction from the details of the computer. It allows you to create powerful and complex programs without knowing how the CPU works'
+  },
+      {
+    vocab:  'Syntax Error',
+    definition: 'A mistake such as a misspelled key word, a missing punctuation character, or the incorrect use of an operator.'
+  },
+      {
+    vocab:  'Logic Error',
+    definition: 'A mistake that does not prevent the program from running, but causes it to produce incorrect results. (Mathematical mistakes are common causes)'
+  },
+      {
+    vocab:  'Boolean Expressions',
+    definition: 'Expressions that can be evaluated as either true or false.'
+  },
+  {
+    vocab:  'Relational Operator',
+    definition: 'Determines whether a specific relationship exists between two values. Examples are >, < and =='
+  },
+      {
+    vocab:  'Logical Operators',
+    definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
+  },  
 ]
+
 
 
 function createQuestion() {
