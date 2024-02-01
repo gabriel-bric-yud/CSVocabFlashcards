@@ -169,12 +169,21 @@ legend {
   text-align: center;
 }
 
+.testOptions {
+  display: flex;
+  justify-self: center;
+}
 
+.userOption {
+  height:20px; 
+  width:20px;
+}
 
 
 @media (min-width: 900px) {
   .topContainer {
-    max-width: 850px;
+    justify-self: center;
+    max-width: 600px;
   }
   #question {
     font-size: 30px;
@@ -199,12 +208,18 @@ legend {
   }
 
   .gameType {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #guessWord, #guessDefinition {
-    height:30px; 
-    width:30px;
+    height:20px; 
+    width:20px;
   }
 
+}
+
+@media (max-width: 749px) {
+  .testOptions {
+    display: grid;
+  }
 }
