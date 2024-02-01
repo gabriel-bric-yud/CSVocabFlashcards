@@ -6,6 +6,9 @@ const answerText = document.querySelector('#answerText');
 const question = document.querySelector("#question")
 const guessWord = document.querySelector('#guessWord')
 const guessDefinition = document.querySelector('#guessDefinition')
+const csit111Midterm = document.querySelector('#csit111Midterm')
+const csit111Final = document.querySelector('#csit111Final')
+const csit240Chapter1 = document.querySelector('#csit240Chapter1')
 
 let i;
 let newQuestion;
@@ -33,542 +36,542 @@ function fadeIn(elem, increment, interval) {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-let vocabArrayMidterm = [
-    {
-      vocab: 'Program',
-      definition: 'A set of instructions that a computer follows to perform a task.'
-    },
-    {
-      vocab: 'Programmer, or Software Developer',
-      definition: 'A person with the training and skills necessary to design, create, and test computer programs.'
-    },
-    {
-      vocab:  'Hardware',
-      definition: 'Refers to all of the physical devices, or components, that a computer is made of. Typical computer system consists of the following major components the central processing unit (CPU), Main memory, Secondary storage devices, Input devices, Output devices.'
-    },
-    {
-      vocab:  'Central Processing Unit, or CPU',
-      definition: 'Part of a computer that actually runs programs. (major component)'
-    },
-    {
-      vocab:  'Microprocessors',
-      definition: 'Small modern CPU chips.'
-    },
-    {
-      vocab:  'Main Memory',
-      definition: 'Commonly known as random-access memory, or RAM. Used for stroage of data on a computer. (major component)'
-    },
-    {
-      vocab:  'Random-Access Memory, or RAM',
-      definition: 'A type of Main Memory. Usually a volatile type of memory that is used only for temporary storage while a program is running.'
-    },
-    {
-      vocab:  'Read-only memory, or ROM',
-      definition: 'A nonvolatile type of memory, even when the computer’s power is turned off. It is typically used to store programs that are important for the system’s operation. A computer can read the contents, but it cannot change its contents, or store additional data there.'
-    },
-    {
-      vocab:  'Secondary Storage ',
-      definition: 'A type of memory that can hold data for long periods of time, even when there is no power to the computer. (major component)'
-    },
-    {
-      vocab:  'Disk Drive ',
-      definition: 'Stores data by magnetically encoding it onto a circular disk. It is an example of secondary storage.'
-    },
-    {
-      vocab:  'Solid State Drives, or SSD',
-      definition: 'Stores data in solid-state memory, has no moving parts, and operates faster than a traditional disk drive. It is an example of secondary storage.'
-    },
-    {
-      vocab:  'Universal Serial Bus drives, or USB drives',
-      definition: 'Small devices that do not actually contain a disk. They store data in a special type of memory known as flash memory.'
-    },
-    {
-      vocab:  'Input',
-      definition: 'Any data the computer collects from people and from other devices.'
-    },
-    {
-      vocab:  'Input Device',
-      definition: 'A component that collects the data and sends it to the computer. Examples include keyboard, mouse, touchscreen, scanner, microphone, discs and digital cameras.(major component)'
-    },
-    {
-      vocab:  'Output',
-      definition: 'Any data the computer produces for people or for other devices.'
-    },
-    {
-      vocab:  'Output Device',
-      definition: 'Formats and presents data. Examples include are video displays, discs and printers. (major component)'
-    },
-    {
-      vocab:  'Byte',
-      definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
-    },
-    {
-      vocab:  'Bit',
-      definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
-    },
-    {
-      vocab:  'Binary Numbering System',
-      definition: 'A system where all numeric values are written as sequences of 0s and 1s.'
-    },
-    {
-      vocab:  'American Standard Code for Information Interchange (ASCII)',
-      definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
-    },
-    {
-      vocab:  'Unicode',
-      definition: 'An extensive encoding scheme that is compatible with ASCII, and can also represent the characters of many of the world’s languages.'
-    },
-    {
-      vocab:  'Hexadecimal',
-      definition: 'A numbering system relating to or using a system of numerical notation that has 16 rather than 10 as its base'
-    },
-    {
-      vocab:  'Two’s Complement',
-      definition: 'A technique to encode negative numbers'
-    },
-    {
-      vocab:  'Floating-Point Notation',
-      definition: 'A technique to encode real numbers.'
-    },
-    {
-      vocab:  'Digital',
-      definition: 'Used to describe anything that uses binary numbers.'
-    },
-    {
-      vocab:  'Digital Data',
-      definition: 'Data that is stored in binary.'
-    },
-    {
-      vocab:  'Digital Device ',
-      definition: 'Any device that works with binary data.'
-    },
-    {
-      vocab:  'Pixels',
-      definition: 'Represents a picture element and are tiny dots of color'
-    },
-    {
-      vocab:  'Samples',
-      definition: 'Digital audio that is broken into small pieces.'
-    },
-    {
-      vocab:  'Machine Language',
-      definition: 'A programming language consisting of binary or hexadecimal instructions which a computer can respond to directly.'
-    },
-    {
-      vocab:  'Instruction Set',
-      definition: 'The entire set of instructions that a CPU or micro-processor can understand and execute.'
-    },
-    {
-      vocab:  'fetch-decode-execute cycle',
-      definition: 'Happens when a CPU executes the instructions in a program. The first step is to read the next instruction from memory into the CPU. Then the CPU decodes the instruction to determine which operation it should perform. The last step is to perform the operation.'
-    },
-    {
-      vocab:  'Assembly Language',
-      definition: 'An early alternative to machine language. Instead of using binary numbers for instructions, it uses short words that are known as mnemonics.'
-    },
-    {
-      vocab:  'Mnemonics',
-      definition: 'Short words used instead of using binary numbers for instructions in low level languages.'
-    },
-    {
-      vocab:  'Assembler',
-      definition: 'A special program used to translate an assembly language program to a machine language program.'
-    },
-    {
-      vocab:  'Low-level Language',
-      definition: "A language that provides little or no abstraction from a computer's instruction set."
-    },
-    {
-      vocab:  'High-level Language ',
-      definition: 'A programming language with strong abstraction from the details of the computer. It allows you to create powerful and complex programs without knowing how the CPU works'
-    },
-    {
-      vocab:  'Key Words or Reserved Words ',
-      definition: 'Set of words that have a specific meaning and purpose in a high-level language.'
-    },
-    {
-      vocab:  'Operators',
-      definition: 'Symbols that perform various operations on data such a + or -.'
-    },
-    {
-      vocab:  'Syntax',
-      definition: 'Rules that dictate how key words, operators, and various punctuation characters must be used in a programming language.'
-    },
-    {
-      vocab:  'Statements',
-      definition: 'Individual instructions that you use to write a program in a high-level programming language.'
-    },
-    {
-      vocab:  'Compiler',
-      definition: 'A program that translates a high-level language program into a separate machine language program.'
-    },
-    {
-      vocab:  'Interpreter',
-      definition: 'A program that both translates and executes the instructions in a high-level language program. This reads each individual instruction in the program, converts it to a machine language instruction and then immediately executes it.'
-    },
-    {
-      vocab:  'Source Code or Code',
-      definition: 'Statements that a programmer writes in a high-level language.'
-    },
-    {
-      vocab:  'Syntax Error',
-      definition: 'A mistake such as a misspelled key word, a missing punctuation character, or the incorrect use of an operator.'
-    },
-    {
-      vocab:  'Integrated development environments (IDE)',
-      definition: 'Specialized software packages for writing code. They include a text editor that has specialized features for writing statements in a high-level programming language, a compiler or interpreter, and useful tools for testing programs and locating errors.'
-    },
-    {
-      vocab:  'System Software',
-      definition: 'Set of programs that control, manage or enhance the operation of a computer. This includes operating systems, utility programs and software development tools.'
-    },
-    {
-      vocab:  'Application Software',
-      definition: 'Set of programs that make a computer useful for everyday tasks by operating with the user directly.'
-    },
-    {
-      vocab:  'Operating System',
-      definition: 'The is the most fundamental set of programs on a computer. It controls the internal operations of the computer’s hardware, manages all of the devices connected to the computer, allows data to be saved to and retrieved from storage devices, and allows other programs to run on the computer. (System Software)'
-    },
-    {
-      vocab:  'Utility Program',
-      definition: 'Performs a specialized task that enhances the computer’s operation or safeguards data. Examples are virus scanners, file compression programs, and data backup programs. (System Software)'
-    },
-    {
-      vocab:  'Software Development Tools',
-      definition: 'The programs that programmers use to create, modify, and test software. Software development tools are the programs that programmers use to create, modify, and test software. (System Software)'
-    },
-    {
-      vocab:  'Logic Error',
-      definition: 'A mistake that does not prevent the program from running, but causes it to produce incorrect results. (Mathematical mistakes are common causes)'
-    },
-    {
-      vocab:  'Debug',
-      definition: 'When a programmer finds and corrects code that is causing an error.'
-    },
-    {
-      vocab:  'Program Development Cycle',
-      definition: '5 step process of creating a program and is repeated until no errors can be found. The steps are Design the program, Write the code, Correct syntax errors, Test the executable code, Debug the code.'
-    },
-    {
-      vocab:  'Designing a Program',
-      definition: 'The first step of the Program Development Cycle and consists of two steps: Understand the task that the program is to perform and determine the steps that must be taken to perform the task.'
-    },
-    {
-      vocab:  'Software Requirement',
-      definition: 'A single function that the program must perform in order to satisfy the customer using the program.'
-    },
-    {
-      vocab:  'Algorithm',
-      definition: 'A set of well-defined logical steps in sequential order that must be taken to perform a task.'
-    },
-    {
-      vocab:  'Pseudocode',
-      definition: 'It is an informal language used to create models, or “mock-ups” of programs. It is a generic way to write the statements of an algorithm, without worrying about syntax rules. It is not meant to be compiled or executed. It is fake code.'
-    },
-    {
-      vocab:  'Flowchart',
-      definition: 'A diagram that graphically depicts the steps that take place in a program.'
-    },
-    {
-      vocab:  'Terminal Symbols',
-      definition: 'Ovals which appear at the top and bottom of the flowchart and identify the start and end of a program.'
-    },
-    {
-      vocab:  'Input and Output Symbols',
-      definition: 'Parallelograms in a flowchart which indicate the inputting or outputting external data.'
-    },
-    {
-      vocab:  'Processing Symbols',
-      definition: 'Rectangles in a flowchart that represents a process, action, or function. Also known as "Action Symbols"'
-    },
-    {
-      vocab:  'Connector Symbol',
-      definition: 'Used to break the flowchart into two or more smaller flowcharts and placing them side-by-side on the page.'
-    },
-    {
-      vocab:  'Off-page Connector Symbol',
-      definition: 'Used to connect the pieces of a flowchart on multiple pages. The symbol is the “home plate”'
-    },
-    {
-      vocab:  'Sequence Structure',
-      definition: 'A set of statements that execute in the order that they appear.'
-    },
-    {
-      vocab:  'Control Structure or Structure',
-      definition: 'A logical design that controls the order in which a set of statements executes.'
-    },
-    {
-      vocab:  'String',
-      definition: 'A sequence of characters that is used as data.'
-    },
-    {
-      vocab:  'String Literal',
-      definition: 'A string that appears in the actual code of a program, usually surrounded by quotes.'
-    },
-    {
-      vocab:  'Variable',
-      definition: 'A storage location in memory of a program that is represented by a name.'
-    },
-    {
-      vocab:  'Prompt',
-      definition: 'A message that tells (or asks) the user to enter a specific value.'
-    },
-    {
-      vocab:  'User-Friendly',
-      definition: 'Commonly used in the software business to describe programs that are easy to use.'
-    },
-    {
-      vocab:  'Assignment Statement',
-      definition: 'A statement that sets a variable to a specified value.'
-    },
-    {
-      vocab:  'Expression',
-      definition: 'A combination of one or more constants, variables, functions, and operators that the programming language interprets and computes to produce another value.'
-    },
-    {
-      vocab:  'Math Operators',
-      definition: 'Programmer’s tools for performing calculations.'
-    },
-    {
-      vocab:  'Operands',
-      definition: 'The values on the right and left of the math operator'
-    },
-    {
-      vocab:  'Program',
-      definition: 'A set of instructions that a computer follows to perform a task.'
-    },
-    {
-      vocab:  'Math Expression',
-      definition: 'Performs a calculation and gives a value.'
-    },
-    {
-      vocab:  'Variable Declaration',
-      definition: 'A statement that gives a variable a name and specifies the variable data type.'
-    },
-    {
-      vocab:  'Data Type',
-      definition: 'The type of data that the variable will hold such as string, integer or real.'
-    },
-    {
-      vocab:  'Initialization',
-      definition: 'When you declare a variable and assign a value to it in the declaration statement.'
-    },
-    {
-      vocab:  'Uninitialized Variable',
-      definition: 'A variable that has been declared, but has not been initialized or assigned a value.'
-    },
-    {
-      vocab:  'Modulus',
-      definition: 'A math operator that divides one number by another and gives the remainder'
-    },
-    {
-      vocab:  'Numeric Literal',
-      definition: 'A number that is written into a program’s code.'
-    },
-    {
-      vocab:  'Real',
-      definition: 'A numeric literal is written with a decimal point.'
-    },
-    {
-      vocab:  'Named Constant or Constant ',
-      definition: 'A name that represents a value that cannot be changed during the program’s execution.'
-    },
-    {
-      vocab:  'Decision Structure',
-      definition: 'Allows a program to perform actions only under certain conditions. Also called a selection structure.'
-    },
-    {
-      vocab:  'Single Alternative Decision Structure',
-      definition: 'A structure that provides only one alternative path of execution.'
-    },
-    {
-      vocab:  'Condition',
-      definition: 'Any expression that can be evaluated as either true or false'
-    },
-    {
-      vocab:  'Boolean Expressions',
-      definition: 'Expressions that can be evaluated as either true or false.'
-    },
-    {
-      vocab:  'Relational Operator',
-      definition: 'Determines whether a specific relationship exists between two values. Examples are >, < and =='
-    },
-    {
-      vocab:  'Dual Alternative Decision Structure',
-      definition: ' is a structure with two possible paths of execution: one path is taken if a condition is true, and the other path is taken if the condition is false.'
-    },
-    {
-      vocab:  'Case Structure or Multiple Alternative Decision Structure',
-      definition: 'Allows you to test the value of a variable or an expression (test Expression) and then use that value to determine which statement or set of statements to execute.'
-    },
-    {
-      vocab:  'Logical Operators',
-      definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
-    },
-    {
-      vocab:  'Short-Circuit Evaluation',
-      definition: 'The method of check AND / OR compound expressions by checking the left side first.'
-    },
-    {
-      vocab:  'Unary Operator',
-      definition: 'An operation with only one operand such as the NOT operator.'
-    },
-    {
-      vocab:  'Flag',
-      definition: 'A variable that signals when some condition exists in the program.'
-    },
-    {
-      vocab:  'Default',
-      definition: 'Executed in a switch statement when the testExpression does not match any of the case values.'
-    },
-    {
-      vocab:  'Repetition Structure',
-      definition: 'Causes a statement or set of statements to execute repeatedly. Commonly known as a loop.'
-    },
-    {
-      vocab:  'Condition-Controlled Loop',
-      definition: 'Uses a true/false condition to control the number of times that something repeats. Examples are while, do-while, do-until'
-    },
-    {
-      vocab:  'Count-Controlled loop ',
-      definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
-    },
-    {
-      vocab:  'Counter variable, or Counter',
-      definition: 'Used by a count-controlled-loop to store the number of iterations that it has performed.'
-    },
-    {
-      vocab:  'Increment',
-      definition: 'To increase the value of a variable.'
-    },
-    {
-      vocab:  'Decrement',
-      definition: 'To decrease the value of a variable.'
-    },
-    {
-      vocab:  'Iteration',
-      definition: 'Is each execution of the entire body of a loop.'
-    },
-    {
-      vocab: 'Procedure',
-      definition: 'A module or function that performs a specific task such as gethering input, performing calculations, reading or writing files, displaying output, etc...'
-    },
-    {
-      vocab: 'Object-Orientated Programming (OOP)',
-      definition: 'A type of programming that is centered around creating objects.'
-    },
-    {
-      vocab: 'Object',
-      definition: 'A software entity that contains both data and procedures.'
-    },
-    {
-      vocab: 'Fields',
-      definition: 'The data contained in an object. Simply variables, arrays, or other data structures that are stored in an object.'
-    },
-    {
-      vocab: 'Methods',
-      definition: 'Another term for modules or functions.'
-    },
-    {
-      vocab: 'Encapsulation',
-      definition: 'Refers to the combining of data and code into a single object.'
-    },
-    {
-      vocab: 'Data Hiding',
-      definition: 'An objects ability to shield or hide its data from code that is outside the object.'
-    },
-    {
-      vocab: 'Object Reusability',
-      definition: 'The ability to use an object and its methods by many programs that need its service.'
-    },
-    {
-      vocab: 'State',
-      definition: 'TThe current values of data in an object.'
-    },
-    {
-      vocab: 'Private Methods and Private Variables',
-      definition: 'Procedures/functions and data that are a part of an objects internal workings. They are shielded from code outside the object.'
-    },
-    {
-      vocab: 'Public Methods',
-      definition: 'Procedures/functions that can be freely accessed by entities outside the object'
-    },
-    {
-      vocab: 'Class',
-      definition: 'The code that specifies the fields and methods of an object. A "blueprint" of an object.'
-    },
-    {
-      vocab: 'Instance',
-      definition: 'Refers to each seperate object created from a class.'
-    },
-    {
-      vocab: 'Members',
-      definition: 'The fields and methods that belong to a class. '
-    },
-    {
-      vocab: 'Access Specifier',
-      definition: 'Designates the scope of how a class field or method can be accessed. Such as "Public" or "Private".'
-    },
-    {
-      vocab: 'Class Variable',
-      definition: 'A special type of variable that can referance an object in the computers memory and work with object.'
-    },
-    {
-      vocab: 'References',
-      definition: 'When a class variable is assigned the address of an object.'
-    },
-    {
-      vocab: 'Dot Notation',
-      definition: 'A type of notaion to call a specific field or method of a class variable. (ClassVariable.method)'
-    },
-    {
-      vocab: 'Accessor Method',
-      definition: 'A method that gets a value from a class field but does not change it. Sometimes called "getters".'
-    },
-    {
-      vocab: 'Mutator Method',
-      definition: 'A method that stores a value in a field or changes the value of a field in some other way. Sometimes called "setters".'
-    },
-    {
-      vocab: 'Constructor',
-      definition: 'A method that is automatically called when an object is created. Usually it is used to initialize an objects fields with staring values.'
-    },
-    {
-      vocab: 'Default Constructor',
-      definition: 'An initialization method called utomatically on creation of an object if none is provided.'
-    },
-    {
-      vocab: 'Problem Domain',
-      definition: 'A set of real-world object, parties and major events related to the problem.'
-    },
-    {
-      vocab: 'Stale Data',
-      definition: 'When the value of an item is dependant on other data and therfore has the risk of becoming out of date or changed.'
-    },
-    {
-      vocab: 'Class Responsibilities',
-      definition: 'The things that the class is accountable for knowing and the actions that the class is accountable for doing.'
-    },
-    {
-      vocab: 'Inhertitance',
-      definition: 'When there is a relationship between objects which one is a more specialized version built to extend the general object.'
-    },
-    {
-      vocab: 'Superclass',
-      definition: 'The general object in an inheritance relationship. Also called "base classes".'
-    },
-    {
-      vocab: 'Subclass',
-      definition: 'The specialized object in an inheritance relationship. also called "derived classes".'
-    },
-    {
-      vocab: 'Polymorphism',
-      definition: 'An objects ability to take different forms. Allows you to create methods with the same name in different classes. '
-    }
+let csit111MidtermVocab = [
+  {
+    vocab: 'Program',
+    definition: 'A set of instructions that a computer follows to perform a task.'
+  },
+  {
+    vocab: 'Programmer, or Software Developer',
+    definition: 'A person with the training and skills necessary to design, create, and test computer programs.'
+  },
+  {
+    vocab:  'Hardware',
+    definition: 'Refers to all of the physical devices, or components, that a computer is made of. Typical computer system consists of the following major components the central processing unit (CPU), Main memory, Secondary storage devices, Input devices, Output devices.'
+  },
+  {
+    vocab:  'Central Processing Unit, or CPU',
+    definition: 'Part of a computer that actually runs programs. (major component)'
+  },
+  {
+    vocab:  'Microprocessors',
+    definition: 'Small modern CPU chips.'
+  },
+  {
+    vocab:  'Main Memory',
+    definition: 'Commonly known as random-access memory, or RAM. Used for stroage of data on a computer. (major component)'
+  },
+  {
+    vocab:  'Random-Access Memory, or RAM',
+    definition: 'A type of Main Memory. Usually a volatile type of memory that is used only for temporary storage while a program is running.'
+  },
+  {
+    vocab:  'Read-only memory, or ROM',
+    definition: 'A nonvolatile type of memory, even when the computer’s power is turned off. It is typically used to store programs that are important for the system’s operation. A computer can read the contents, but it cannot change its contents, or store additional data there.'
+  },
+  {
+    vocab:  'Secondary Storage ',
+    definition: 'A type of memory that can hold data for long periods of time, even when there is no power to the computer. (major component)'
+  },
+  {
+    vocab:  'Disk Drive ',
+    definition: 'Stores data by magnetically encoding it onto a circular disk. It is an example of secondary storage.'
+  },
+  {
+    vocab:  'Solid State Drives, or SSD',
+    definition: 'Stores data in solid-state memory, has no moving parts, and operates faster than a traditional disk drive. It is an example of secondary storage.'
+  },
+  {
+    vocab:  'Universal Serial Bus drives, or USB drives',
+    definition: 'Small devices that do not actually contain a disk. They store data in a special type of memory known as flash memory.'
+  },
+  {
+    vocab:  'Input',
+    definition: 'Any data the computer collects from people and from other devices.'
+  },
+  {
+    vocab:  'Input Device',
+    definition: 'A component that collects the data and sends it to the computer. Examples include keyboard, mouse, touchscreen, scanner, microphone, discs and digital cameras.(major component)'
+  },
+  {
+    vocab:  'Output',
+    definition: 'Any data the computer produces for people or for other devices.'
+  },
+  {
+    vocab:  'Output Device',
+    definition: 'Formats and presents data. Examples include are video displays, discs and printers. (major component)'
+  },
+  {
+    vocab:  'Byte',
+    definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
+  },
+  {
+    vocab:  'Bit',
+    definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
+  },
+  {
+    vocab:  'Binary Numbering System',
+    definition: 'A system where all numeric values are written as sequences of 0s and 1s.'
+  },
+  {
+    vocab:  'American Standard Code for Information Interchange (ASCII)',
+    definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
+  },
+  {
+    vocab:  'Unicode',
+    definition: 'An extensive encoding scheme that is compatible with ASCII, and can also represent the characters of many of the world’s languages.'
+  },
+  {
+    vocab:  'Hexadecimal',
+    definition: 'A numbering system relating to or using a system of numerical notation that has 16 rather than 10 as its base'
+  },
+  {
+    vocab:  'Two’s Complement',
+    definition: 'A technique to encode negative numbers'
+  },
+  {
+    vocab:  'Floating-Point Notation',
+    definition: 'A technique to encode real numbers.'
+  },
+  {
+    vocab:  'Digital',
+    definition: 'Used to describe anything that uses binary numbers.'
+  },
+  {
+    vocab:  'Digital Data',
+    definition: 'Data that is stored in binary.'
+  },
+  {
+    vocab:  'Digital Device ',
+    definition: 'Any device that works with binary data.'
+  },
+  {
+    vocab:  'Pixels',
+    definition: 'Represents a picture element and are tiny dots of color'
+  },
+  {
+    vocab:  'Samples',
+    definition: 'Digital audio that is broken into small pieces.'
+  },
+  {
+    vocab:  'Machine Language',
+    definition: 'A programming language consisting of binary or hexadecimal instructions which a computer can respond to directly.'
+  },
+  {
+    vocab:  'Instruction Set',
+    definition: 'The entire set of instructions that a CPU or micro-processor can understand and execute.'
+  },
+  {
+    vocab:  'fetch-decode-execute cycle',
+    definition: 'Happens when a CPU executes the instructions in a program. The first step is to read the next instruction from memory into the CPU. Then the CPU decodes the instruction to determine which operation it should perform. The last step is to perform the operation.'
+  },
+  {
+    vocab:  'Assembly Language',
+    definition: 'An early alternative to machine language. Instead of using binary numbers for instructions, it uses short words that are known as mnemonics.'
+  },
+  {
+    vocab:  'Mnemonics',
+    definition: 'Short words used instead of using binary numbers for instructions in low level languages.'
+  },
+  {
+    vocab:  'Assembler',
+    definition: 'A special program used to translate an assembly language program to a machine language program.'
+  },
+  {
+    vocab:  'Low-level Language',
+    definition: "A language that provides little or no abstraction from a computer's instruction set."
+  },
+  {
+    vocab:  'High-level Language ',
+    definition: 'A programming language with strong abstraction from the details of the computer. It allows you to create powerful and complex programs without knowing how the CPU works'
+  },
+  {
+    vocab:  'Key Words or Reserved Words ',
+    definition: 'Set of words that have a specific meaning and purpose in a high-level language.'
+  },
+  {
+    vocab:  'Operators',
+    definition: 'Symbols that perform various operations on data such a + or -.'
+  },
+  {
+    vocab:  'Syntax',
+    definition: 'Rules that dictate how key words, operators, and various punctuation characters must be used in a programming language.'
+  },
+  {
+    vocab:  'Statements',
+    definition: 'Individual instructions that you use to write a program in a high-level programming language.'
+  },
+  {
+    vocab:  'Compiler',
+    definition: 'A program that translates a high-level language program into a separate machine language program.'
+  },
+  {
+    vocab:  'Interpreter',
+    definition: 'A program that both translates and executes the instructions in a high-level language program. This reads each individual instruction in the program, converts it to a machine language instruction and then immediately executes it.'
+  },
+  {
+    vocab:  'Source Code or Code',
+    definition: 'Statements that a programmer writes in a high-level language.'
+  },
+  {
+    vocab:  'Syntax Error',
+    definition: 'A mistake such as a misspelled key word, a missing punctuation character, or the incorrect use of an operator.'
+  },
+  {
+    vocab:  'Integrated development environments (IDE)',
+    definition: 'Specialized software packages for writing code. They include a text editor that has specialized features for writing statements in a high-level programming language, a compiler or interpreter, and useful tools for testing programs and locating errors.'
+  },
+  {
+    vocab:  'System Software',
+    definition: 'Set of programs that control, manage or enhance the operation of a computer. This includes operating systems, utility programs and software development tools.'
+  },
+  {
+    vocab:  'Application Software',
+    definition: 'Set of programs that make a computer useful for everyday tasks by operating with the user directly.'
+  },
+  {
+    vocab:  'Operating System',
+    definition: 'The is the most fundamental set of programs on a computer. It controls the internal operations of the computer’s hardware, manages all of the devices connected to the computer, allows data to be saved to and retrieved from storage devices, and allows other programs to run on the computer. (System Software)'
+  },
+  {
+    vocab:  'Utility Program',
+    definition: 'Performs a specialized task that enhances the computer’s operation or safeguards data. Examples are virus scanners, file compression programs, and data backup programs. (System Software)'
+  },
+  {
+    vocab:  'Software Development Tools',
+    definition: 'The programs that programmers use to create, modify, and test software. Software development tools are the programs that programmers use to create, modify, and test software. (System Software)'
+  },
+  {
+    vocab:  'Logic Error',
+    definition: 'A mistake that does not prevent the program from running, but causes it to produce incorrect results. (Mathematical mistakes are common causes)'
+  },
+  {
+    vocab:  'Debug',
+    definition: 'When a programmer finds and corrects code that is causing an error.'
+  },
+  {
+    vocab:  'Program Development Cycle',
+    definition: '5 step process of creating a program and is repeated until no errors can be found. The steps are Design the program, Write the code, Correct syntax errors, Test the executable code, Debug the code.'
+  },
+  {
+    vocab:  'Designing a Program',
+    definition: 'The first step of the Program Development Cycle and consists of two steps: Understand the task that the program is to perform and determine the steps that must be taken to perform the task.'
+  },
+  {
+    vocab:  'Software Requirement',
+    definition: 'A single function that the program must perform in order to satisfy the customer using the program.'
+  },
+  {
+    vocab:  'Algorithm',
+    definition: 'A set of well-defined logical steps in sequential order that must be taken to perform a task.'
+  },
+  {
+    vocab:  'Pseudocode',
+    definition: 'It is an informal language used to create models, or “mock-ups” of programs. It is a generic way to write the statements of an algorithm, without worrying about syntax rules. It is not meant to be compiled or executed. It is fake code.'
+  },
+  {
+    vocab:  'Flowchart',
+    definition: 'A diagram that graphically depicts the steps that take place in a program.'
+  },
+  {
+    vocab:  'Terminal Symbols',
+    definition: 'Ovals which appear at the top and bottom of the flowchart and identify the start and end of a program.'
+  },
+  {
+    vocab:  'Input and Output Symbols',
+    definition: 'Parallelograms in a flowchart which indicate the inputting or outputting external data.'
+  },
+  {
+    vocab:  'Processing Symbols',
+    definition: 'Rectangles in a flowchart that represents a process, action, or function. Also known as "Action Symbols"'
+  },
+  {
+    vocab:  'Connector Symbol',
+    definition: 'Used to break the flowchart into two or more smaller flowcharts and placing them side-by-side on the page.'
+  },
+  {
+    vocab:  'Off-page Connector Symbol',
+    definition: 'Used to connect the pieces of a flowchart on multiple pages. The symbol is the “home plate”'
+  },
+  {
+    vocab:  'Sequence Structure',
+    definition: 'A set of statements that execute in the order that they appear.'
+  },
+  {
+    vocab:  'Control Structure or Structure',
+    definition: 'A logical design that controls the order in which a set of statements executes.'
+  },
+  {
+    vocab:  'String',
+    definition: 'A sequence of characters that is used as data.'
+  },
+  {
+    vocab:  'String Literal',
+    definition: 'A string that appears in the actual code of a program, usually surrounded by quotes.'
+  },
+  {
+    vocab:  'Variable',
+    definition: 'A storage location in memory of a program that is represented by a name.'
+  },
+  {
+    vocab:  'Prompt',
+    definition: 'A message that tells (or asks) the user to enter a specific value.'
+  },
+  {
+    vocab:  'User-Friendly',
+    definition: 'Commonly used in the software business to describe programs that are easy to use.'
+  },
+  {
+    vocab:  'Assignment Statement',
+    definition: 'A statement that sets a variable to a specified value.'
+  },
+  {
+    vocab:  'Expression',
+    definition: 'A combination of one or more constants, variables, functions, and operators that the programming language interprets and computes to produce another value.'
+  },
+  {
+    vocab:  'Math Operators',
+    definition: 'Programmer’s tools for performing calculations.'
+  },
+  {
+    vocab:  'Operands',
+    definition: 'The values on the right and left of the math operator'
+  },
+  {
+    vocab:  'Program',
+    definition: 'A set of instructions that a computer follows to perform a task.'
+  },
+  {
+    vocab:  'Math Expression',
+    definition: 'Performs a calculation and gives a value.'
+  },
+  {
+    vocab:  'Variable Declaration',
+    definition: 'A statement that gives a variable a name and specifies the variable data type.'
+  },
+  {
+    vocab:  'Data Type',
+    definition: 'The type of data that the variable will hold such as string, integer or real.'
+  },
+  {
+    vocab:  'Initialization',
+    definition: 'When you declare a variable and assign a value to it in the declaration statement.'
+  },
+  {
+    vocab:  'Uninitialized Variable',
+    definition: 'A variable that has been declared, but has not been initialized or assigned a value.'
+  },
+  {
+    vocab:  'Modulus',
+    definition: 'A math operator that divides one number by another and gives the remainder'
+  },
+  {
+    vocab:  'Numeric Literal',
+    definition: 'A number that is written into a program’s code.'
+  },
+  {
+    vocab:  'Real',
+    definition: 'A numeric literal is written with a decimal point.'
+  },
+  {
+    vocab:  'Named Constant or Constant ',
+    definition: 'A name that represents a value that cannot be changed during the program’s execution.'
+  },
+  {
+    vocab:  'Decision Structure',
+    definition: 'Allows a program to perform actions only under certain conditions. Also called a selection structure.'
+  },
+  {
+    vocab:  'Single Alternative Decision Structure',
+    definition: 'A structure that provides only one alternative path of execution.'
+  },
+  {
+    vocab:  'Condition',
+    definition: 'Any expression that can be evaluated as either true or false'
+  },
+  {
+    vocab:  'Boolean Expressions',
+    definition: 'Expressions that can be evaluated as either true or false.'
+  },
+  {
+    vocab:  'Relational Operator',
+    definition: 'Determines whether a specific relationship exists between two values. Examples are >, < and =='
+  },
+  {
+    vocab:  'Dual Alternative Decision Structure',
+    definition: ' is a structure with two possible paths of execution: one path is taken if a condition is true, and the other path is taken if the condition is false.'
+  },
+  {
+    vocab:  'Case Structure or Multiple Alternative Decision Structure',
+    definition: 'Allows you to test the value of a variable or an expression (test Expression) and then use that value to determine which statement or set of statements to execute.'
+  },
+  {
+    vocab:  'Logical Operators',
+    definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
+  },
+  {
+    vocab:  'Short-Circuit Evaluation',
+    definition: 'The method of check AND / OR compound expressions by checking the left side first.'
+  },
+  {
+    vocab:  'Unary Operator',
+    definition: 'An operation with only one operand such as the NOT operator.'
+  },
+  {
+    vocab:  'Flag',
+    definition: 'A variable that signals when some condition exists in the program.'
+  },
+  {
+    vocab:  'Default',
+    definition: 'Executed in a switch statement when the testExpression does not match any of the case values.'
+  },
+  {
+    vocab:  'Repetition Structure',
+    definition: 'Causes a statement or set of statements to execute repeatedly. Commonly known as a loop.'
+  },
+  {
+    vocab:  'Condition-Controlled Loop',
+    definition: 'Uses a true/false condition to control the number of times that something repeats. Examples are while, do-while, do-until'
+  },
+  {
+    vocab:  'Count-Controlled loop ',
+    definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
+  },
+  {
+    vocab:  'Counter variable, or Counter',
+    definition: 'Used by a count-controlled-loop to store the number of iterations that it has performed.'
+  },
+  {
+    vocab:  'Increment',
+    definition: 'To increase the value of a variable.'
+  },
+  {
+    vocab:  'Decrement',
+    definition: 'To decrease the value of a variable.'
+  },
+  {
+    vocab:  'Iteration',
+    definition: 'Is each execution of the entire body of a loop.'
+  },
+  {
+    vocab: 'Procedure',
+    definition: 'A module or function that performs a specific task such as gethering input, performing calculations, reading or writing files, displaying output, etc...'
+  },
+  {
+    vocab: 'Object-Orientated Programming (OOP)',
+    definition: 'A type of programming that is centered around creating objects.'
+  },
+  {
+    vocab: 'Object',
+    definition: 'A software entity that contains both data and procedures.'
+  },
+  {
+    vocab: 'Fields',
+    definition: 'The data contained in an object. Simply variables, arrays, or other data structures that are stored in an object.'
+  },
+  {
+    vocab: 'Methods',
+    definition: 'Another term for modules or functions.'
+  },
+  {
+    vocab: 'Encapsulation',
+    definition: 'Refers to the combining of data and code into a single object.'
+  },
+  {
+    vocab: 'Data Hiding',
+    definition: 'An objects ability to shield or hide its data from code that is outside the object.'
+  },
+  {
+    vocab: 'Object Reusability',
+    definition: 'The ability to use an object and its methods by many programs that need its service.'
+  },
+  {
+    vocab: 'State',
+    definition: 'TThe current values of data in an object.'
+  },
+  {
+    vocab: 'Private Methods and Private Variables',
+    definition: 'Procedures/functions and data that are a part of an objects internal workings. They are shielded from code outside the object.'
+  },
+  {
+    vocab: 'Public Methods',
+    definition: 'Procedures/functions that can be freely accessed by entities outside the object'
+  },
+  {
+    vocab: 'Class',
+    definition: 'The code that specifies the fields and methods of an object. A "blueprint" of an object.'
+  },
+  {
+    vocab: 'Instance',
+    definition: 'Refers to each seperate object created from a class.'
+  },
+  {
+    vocab: 'Members',
+    definition: 'The fields and methods that belong to a class. '
+  },
+  {
+    vocab: 'Access Specifier',
+    definition: 'Designates the scope of how a class field or method can be accessed. Such as "Public" or "Private".'
+  },
+  {
+    vocab: 'Class Variable',
+    definition: 'A special type of variable that can referance an object in the computers memory and work with object.'
+  },
+  {
+    vocab: 'References',
+    definition: 'When a class variable is assigned the address of an object.'
+  },
+  {
+    vocab: 'Dot Notation',
+    definition: 'A type of notaion to call a specific field or method of a class variable. (ClassVariable.method)'
+  },
+  {
+    vocab: 'Accessor Method',
+    definition: 'A method that gets a value from a class field but does not change it. Sometimes called "getters".'
+  },
+  {
+    vocab: 'Mutator Method',
+    definition: 'A method that stores a value in a field or changes the value of a field in some other way. Sometimes called "setters".'
+  },
+  {
+    vocab: 'Constructor',
+    definition: 'A method that is automatically called when an object is created. Usually it is used to initialize an objects fields with staring values.'
+  },
+  {
+    vocab: 'Default Constructor',
+    definition: 'An initialization method called utomatically on creation of an object if none is provided.'
+  },
+  {
+    vocab: 'Problem Domain',
+    definition: 'A set of real-world object, parties and major events related to the problem.'
+  },
+  {
+    vocab: 'Stale Data',
+    definition: 'When the value of an item is dependant on other data and therfore has the risk of becoming out of date or changed.'
+  },
+  {
+    vocab: 'Class Responsibilities',
+    definition: 'The things that the class is accountable for knowing and the actions that the class is accountable for doing.'
+  },
+  {
+    vocab: 'Inhertitance',
+    definition: 'When there is a relationship between objects which one is a more specialized version built to extend the general object.'
+  },
+  {
+    vocab: 'Superclass',
+    definition: 'The general object in an inheritance relationship. Also called "base classes".'
+  },
+  {
+    vocab: 'Subclass',
+    definition: 'The specialized object in an inheritance relationship. also called "derived classes".'
+  },
+  {
+    vocab: 'Polymorphism',
+    definition: 'An objects ability to take different forms. Allows you to create methods with the same name in different classes. '
+  }
 ]
 
-let vocabArrayFinal = [
+let csit111FinalVocab = [
   {
     vocab: 'Module',
     definition: 'A group of statements that exists within a program for the purpose of perfoming a specific task. Also known as "procedures", "subroutines", "subprograms", "methods" and "functions".'
@@ -841,7 +844,7 @@ let vocabArrayFinal = [
     vocab: 'Control Variable',
     definition: 'A special variable used in control break logic to start and end the processing.'
   },
- {
+  {
     vocab:  'Sequence Structure',
     definition: 'A set of statements that execute in the order that they appear.'
   },
@@ -885,31 +888,31 @@ let vocabArrayFinal = [
     vocab:  'Count-Controlled loop ',
     definition: 'Repeats something a specific number of times. Typically performs the following three actions: initialization, test, and increment. Example is a For loops'
   },
-    {
-        vocab: 'Program',
-        definition: 'A set of instructions that a computer follows to perform a task.'
-    },
-    {
-        vocab:  'American Standard Code for Information Interchange (ASCII)',
-        definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
-    },
-    {
-        vocab:  'Byte',
-        definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
-    },
-    {
-        vocab:  'Bit',
-        definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
-    },
-      {
+  {
+    vocab: 'Program',
+    definition: 'A set of instructions that a computer follows to perform a task.'
+  },
+  {
+    vocab:  'American Standard Code for Information Interchange (ASCII)',
+    definition: 'A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters. It is a standard data-encoding format for electronic communication between computers.'
+  },
+  {
+    vocab:  'Byte',
+    definition: 'A unit of digital information consisting of a group of binary digits(usually eight) that operate as a tiny storage location in which a computer’s memory is divided.'
+  },
+  {
+    vocab:  'Bit',
+    definition: 'Stands for binary digit and is a tiny electrical component that can hold either a positive or a negative charge. (1 or 0)'
+  },
+  {
     vocab:  'Machine Language',
     definition: 'A programming language consisting of binary or hexadecimal instructions which a computer can respond to directly.'
   },
-      {
+  {
     vocab:  'Assembly Language',
     definition: 'An early alternative to machine language. Instead of using binary numbers for instructions, it uses short words that are known as mnemonics.'
   },
-      {
+  {
     vocab:  'Compiler',
     definition: 'A program that translates a high-level language program into a separate machine language program.'
   },
@@ -917,11 +920,11 @@ let vocabArrayFinal = [
     vocab:  'Interpreter',
     definition: 'A program that both translates and executes the instructions in a high-level language program. This reads each individual instruction in the program, converts it to a machine language instruction and then immediately executes it.'
   },
-      {
+  {
     vocab:  'Assembler',
     definition: 'A special program used to translate an assembly language program to a machine language program.'
   },
-      {
+  {
     vocab:  'Low-level Language',
     definition: "A language that provides little or no abstraction from a computer's instruction set."
   },
@@ -929,15 +932,15 @@ let vocabArrayFinal = [
     vocab:  'High-level Language ',
     definition: 'A programming language with strong abstraction from the details of the computer. It allows you to create powerful and complex programs without knowing how the CPU works'
   },
-      {
+  {
     vocab:  'Syntax Error',
     definition: 'A mistake such as a misspelled key word, a missing punctuation character, or the incorrect use of an operator.'
   },
-      {
+  {
     vocab:  'Logic Error',
     definition: 'A mistake that does not prevent the program from running, but causes it to produce incorrect results. (Mathematical mistakes are common causes)'
   },
-      {
+  {
     vocab:  'Boolean Expressions',
     definition: 'Expressions that can be evaluated as either true or false.'
   },
@@ -945,57 +948,199 @@ let vocabArrayFinal = [
     vocab:  'Relational Operator',
     definition: 'Determines whether a specific relationship exists between two values. Examples are >, < and =='
   },
-      {
+  {
     vocab:  'Logical Operators',
     definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
   },
-   {
-    vocab:  'Logical Operators',
-    definition: 'Operators which you can use to create complex Boolean expressions. Examples include AND, Or, and NOT'
-  },
-   {
+  {
     vocab:  'Oval',
     definition: 'Flowchart symbol for start and end of a program. Called Terminal symbols.'
   },
-   {
+  {
     vocab:  'Parallelogram',
     definition: 'Flowchart for displaying information or reading input. Called Input/Outou symbols.'
   },
-   {
+  {
     vocab:  'Rectangle',
     definition: 'Flowchart symbol for doing calculations and tasks. Called Processing symbols.'
   },
-   {
+  {
     vocab:  'Diamond',
     definition: 'Flowchart symbol for decision structure such as if/else, and some repetition structures such as while loop and conditioned control loops.'
   },
-   {
+  {
     vocab:  'Hexagon',
     definition: 'Flowchart symbol for some repetition structures such as count-controlled loops and for loops.'
   }
 ]
 
+let csit240Chapter1Vocab = [
+  {
+    vocab: 'Assembly Language',
+    definition: 'A low-level language that replaced binary digits with mnemonics.'
+  },
+  {
+    vocab: 'Bytecode',
+    definition: 'A low-level representation of a Java program that is not tied to a specific type of CPU.'
+  },
+  {
+    vocab: 'case-sensitive',
+    definition: 'Making a distinction between uppercase and lowercase letters. Java is case-sensitive'
+  },
+  {
+    vocab: 'class-definition',
+    definition: 'An element in Java program. All java programs are defined using class definitions.'
+  },
+  {
+    vocab: 'Class library',
+    definition: 'A set of software classes that can be used when developing programs. (see Java API)'
+  },
+  {
+    vocab: 'Comment',
+    definition: 'Text included in a program to make the program easier to understand for humans.'
+  },
+  {
+    vocab: 'Compiler',
+    definition: 'A program that translates code in one languase into equivalent code in another language.'
+  },
+  {
+    vocab: 'Deprecated',
+    definition: 'An element that is considered old-fashioned or outdated and should not be used'
+  },
+  {
+    vocab: 'Editor',
+    definition: 'A software tool that allows one to enter text such as a program.'
+  },
+  {
+    vocab: 'Encapsulation',
+    definition: 'The characteristic of an object that means it protects and manages its own information.'
+  },
+  {
+    vocab: 'Graphical User Interface (GUI)',
+    definition: 'An interface to a program that consistts of graphical elements such as windows and buttons.'
+  },
+  {
+    vocab: 'High-Level Language',
+    definition: 'A programming language that is expressed in phrasses that are easier than machine language for a programmer to understand.'
+  },
+  {
+    vocab: 'Indentifier',
+    definition: 'A word in a programming language'
+  },
+  {
+    vocab: 'Inheritance',
+    definition: 'Defining a class based on another that already exists.'
+  },
+  {
+    vocab: 'Integrated Development Enviroment',
+    definition: 'A set of software tools used to create, modify, and test a program.'
+  },
+  {
+    vocab: 'Java 2 Platform',
+    definition: 'The most recent Java technology'
+  },
+  {
+    vocab: 'Java API',
+    definition: 'A library of software that we can use when devoloping programs.'
+  },
+  {
+    vocab: 'Logical Error',
+    definition: 'An error in program that causes it to produce incorrect results.'
+  },
+  {
+    vocab: 'Machine Language',
+    definition: 'The language executed by a particular CPU.'
+  },
+  {
+    vocab: 'Method',
+    definition: 'A group of programming statements that is given a name.'
+  },
+  {
+    vocab: 'Method Invocation',
+    definition: 'Calling a method to execute its code.'
+  },
+  {
+    vocab: 'Natural Language',
+    definition: 'A language that humans use to communicate, such as English.'
+  },
+  {
+    vocab: 'Object',
+    definition: 'A fundamental entity in a Java program that represents something and provides services related to it.'
+  },
+  {
+    vocab: 'Object-Oriented Programming Language',
+    definition: 'A language such as Java that uses objects as the fundamental elements one at a time.'
+  },
+  {
+    vocab: 'Program',
+    definition: 'A series of instructions that a computer executes one at a time.'
+  },
+  {
+    vocab: 'Programming Statement',
+    definition: 'An individual instruction in a programming language.'
+  },
+  {
+    vocab: 'Reserved Word',
+    definition: 'An indentifier that has a special meaning in a program language and can be used only in predifined ways.'
+  },
+  {
+    vocab: 'Runtime Error',
+    definition: 'An error that occurs during program execution and causes the program to terminate abnormally.'
+  },
+  {
+    vocab: 'Semantics',
+    definition: 'Rules that deine what a statment in a language means.'
+  },
+  {
+    vocab: 'Java 2 Platform',
+    definition: 'The most recent Java technology'
+  },
+  {
+    vocab: 'Syntax',
+    definition: 'The rules of a language that dictate how vocabulary elements of the language can be used.'
+  },
+  {
+    vocab: 'Syntax Error',
+    definition: 'A programming error that violates the syntax rules of the language'
+  },
+  {
+    vocab: 'White Space',
+    definition: 'The space, tab, and newline characters used to seperate words in a program.'
+  },
+]
 
+let currentVocabArray = csit240Chapter1Vocab
 
-function createQuestion() {
-    i = Math.floor(Math.random() * vocabArrayFinal.length);
-    console.log(i)
-    newQuestion = vocabArrayFinal[i].definition
-    newAnswer = vocabArrayFinal[i].vocab
-    console.log(newAnswer)
-    console.log(answerText)
-
-    if (guessWord.checked) {
-        question.textContent = newQuestion
-        answerText.textContent = newAnswer
-    }
-    else {
-        question.textContent = newAnswer
-        answerText.textContent = newQuestion
-    }
-    
+function getArray() {
+  if (csit111Final.checked) {
+    currentVocabArray = csit111FinalVocab
+  }
+  else if (csit111Midterm.checked) {
+    currentVocabArray = csit111MidtermVocab
+  }
+  else if (csit240Chapter1.checked) {
+    currentVocabArray = csit240Chapter1Vocab
+  }
 }
 
+function createQuestion() {
+  getArray()
+  i = Math.floor(Math.random() * currentVocabArray.length);
+  console.log(i)
+  newQuestion = currentVocabArray[i].definition
+  newAnswer = currentVocabArray[i].vocab
+  console.log(newAnswer)
+  console.log(answerText)
+
+  if (guessWord.checked) {
+    question.textContent = newQuestion
+    answerText.textContent = newAnswer
+  }
+  else {
+    question.textContent = newAnswer
+    answerText.textContent = newQuestion
+  }   
+}
 
 
 function checkAnswer() {
