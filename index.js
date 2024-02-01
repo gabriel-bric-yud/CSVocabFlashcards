@@ -1089,7 +1089,7 @@ let csit240Chapter1Vocab = [
   },
   {
     vocab: 'Semantics',
-    definition: 'Rules that deine what a statment in a language means.'
+    definition: 'Rules that define what a statment in a language means.'
   },
   {
     vocab: 'Java 2 Platform',
