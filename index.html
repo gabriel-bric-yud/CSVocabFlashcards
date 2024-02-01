@@ -3,7 +3,7 @@
 
 <head>
     <meta charset = 'UTF-8'>
-    <meta name = 'viewport' content = 'width = device-width'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale=1'>
     <title>CSIT111 Vocab Flashcards</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,26 +31,45 @@
 
     <div class = playButtonContainer>
         <button class= 'playButton'>Random Flashcard</button>
-        <div class = 'gameType'>
-            <fieldset>
-                <legend>Select flashcard style:</legend>
-                <div class = 'align'>
-                <div>
-                    <input type = 'radio' id = 'guessWord' name = 'flashcardStyle' value = 'vocabWord' checked>
-                    <label for="guessWord">Guess Vocab Word</label>
-                </div>
-                <div>
-                    <input type = 'radio' id = 'guessDefinition' name = 'flashcardStyle' value = 'vocabDefinition'>
-                    <label for="guessDefinition">Guess Vocab Definition</label>
-                </div>
-                </div>
-            
-            </fieldset>
-        </div>
-        
+        <div class = "testOptions">
+            <div class = 'vocabList gameType'>
+                <fieldset>
+                    <legend>Select Vocab Set</legend>
+                    <div class = 'align'>
+                        <div>
+                            <input class = "userOption" name = "vocabSet" type = 'radio' id = 'csit240Chapter1' checked>
+                            <label for="introProgrammingChapter1">CSIT240 Chapter 1</label>
+                        </div>
+                        <div>
+                            <input class = "userOption" name = "vocabSet" type = 'radio' id = 'csit111Midterm'>
+                            <label for="csitMidterm">CSIT111 Midterm Vocab</label>
+                        </div>
+                        <div>
+                            <input class = "userOption" name = "vocabSet" type = 'radio' id = 'csit111Final'>
+                            <label for="csitFinal">CSIT111 Final Vocab</label>
+                        </div>
+                    </div>
+                
+                </fieldset>
+            </div>
+            <div class = 'gameType'>
+                <fieldset>
+                    <legend>Select flashcard style:</legend>
+                    <div class = 'align'>
+                    <div>
+                        <input type = 'radio' id = 'guessWord' name = 'flashcardStyle' value = 'vocabWord' checked>
+                        <label for="guessWord">Guess Vocab Word</label>
+                    </div>
+                    <div>
+                        <input type = 'radio' id = 'guessDefinition' name = 'flashcardStyle' value = 'vocabDefinition'>
+                        <label for="guessDefinition">Guess Vocab Definition</label>
+                    </div>
+                    </div>
+                
+                </fieldset>
+            </div>
+        </div>   
     </div>
-
-
     <script src="index.js"></script>
     
 </body>
