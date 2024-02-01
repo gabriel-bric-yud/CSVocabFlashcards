@@ -1001,7 +1001,7 @@ let csit240Chapter1Vocab = [
   },
   {
     vocab: 'Compiler',
-    definition: 'A program that translates code in one languase into equivalent code in another language.'
+    definition: 'A program that translates code in one language into equivalent code in another language.'
   },
   {
     vocab: 'Deprecated',
