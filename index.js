@@ -1178,7 +1178,7 @@ let csit240Ch2Vocab = [
   },
   {
     vocab: 'Strongly Typed',
-    definition: 'A programming language characteristic that jprevents a variable from being assigned a value inconsistent with its type.'
+    definition: 'A programming language characteristic that prevents a variable from being assigned a value inconsistent with its type.'
   },
   {
     vocab: 'Token',
